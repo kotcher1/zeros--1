@@ -1,15 +1,20 @@
-# zeros
-Let's count zeros!
+# Zeros
+Учебная задача по JS
 
-## Task
+## Задача
+Реализовать функцию `getZerosCount`, которая принимает любое целое число `number` (`1 <= число <= 10^8`) в качестве единственного аргумента. Необходимо вычислить *сколько нулей в конце числа результата, которое является факториалом `number`*
 
-Your task is to implement `getZerosCount` function, which takes any integer number `number` (`1 <= number <= 10^8`) as only argument. You should calculate *how many zeros in the end of result number, which is factorial of `number`*
-
-For example:
+Пример:
 ```js
-    const zerosCount = getZerosCount(10); // Factorial of 10 is 3628800
-    console.log(zerosCount); // 2. Because there is 2 *tail* zeros in number 3628800
+    const zerosCount = getZerosCount(10); // Факториал 10-ти это 3628800
+    console.log(zerosCount); // 2 (Потому что в конце числа 3628800 дво ноля)
 ```
 
-### Important!
-Do not try to calculate factorial! First - you will not get exact answer on big numbers. Second - it could take several years to calculate factorial on big integers! Try to think up your awesome solution without such calculations. Good luck!
+### Важно!
+Не пытайтьтя вычислить факториал! Во-первых, вы не получится точного ответа на больших числах. Во-вторых, вычисление факториала больших целых чисел может занять несколько лет! Необходимо придумать свое потрясающее решение без таких расчетов.
+
+## Как тестировать
+
+- Запустить `npm install` в терминале
+- Запустить `npm test` в терминале
+- Вы сможете увидеть количество пройденных и провалившихся тестов
